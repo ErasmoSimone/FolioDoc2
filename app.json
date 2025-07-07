@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.erasmo.foliodoc"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
+      "permissions": ["WRITE_EXTERNAL_STORAGE", "READ_EXTERNAL_STORAGE"],
+      "package": "com.erasmo.foliodoc",
+     
+      "softwareKeyboardLayoutMode": "pan",
+      "navigationBarColor": "#04070d",
       "edgeToEdgeEnabled": true
     },
     "web": {
@@ -37,6 +39,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b73a7c98-ebe5-408b-ace8-003b70151849"
+      }
     }
   }
 }
